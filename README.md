@@ -1,4 +1,4 @@
-# Ardius ToS Signup Convertion Rate Prediction model
+# ToS Signup Convertion Rate Prediction model
 This model consists of three sub-models: 
 
   1. Random Forest Model for providing conversion prediction for companies who answer survey but didn't sign
@@ -7,10 +7,8 @@ This model consists of three sub-models:
   
   3. Logistic Regression Model for Causal Inference using the companies 
   
-For questions, contact @phi.nguyen@gusto.com
   
 ## 0. Data Process
-For a more detailed summary of the collected features (across 8 categories), please refer to https://docs.google.com/spreadsheets/d/1Gar1z0Nm9rp_fiYAsj6Ib2u8veq75fGeAa4pT6LER1I/edit#gid=0 or https://redash.zp-int.com/queries/49248
 
 Important notes: Job title related features - currently we are using an open source job title classifier to classify the job titles into 4 categories 0: Business, 1: Other, 2:Sales-Marketing, 3:Technical, and the features we created are job_title_perc_x (percentage of the x type job titles for the company among all the job titles, i.e. the composition of the firm structure). Use test_functions.py for the classification. In the future need better classification models. 
 
